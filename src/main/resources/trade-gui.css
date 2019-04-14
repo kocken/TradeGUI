@@ -1,0 +1,47 @@
+.tab-pane *.tab-header-background {
+    /*-fx-background-color: -fx-outer-border, -fx-inner-border, rgba(248, 159, 54, 0.2); BTC color*/
+    /*-fx-background-color: -fx-outer-border, -fx-inner-border, rgba(105, 240, 174, 0.3); USD color*/
+    -fx-background-color: -fx-outer-border, -fx-inner-border, rgba(255, 185, 163, 0.2);
+    -fx-effect: innershadow(two-pass-box, rgba(0,0,0,0.6), 1, 0.0, 0, 0);
+}
+
+.virtualized-scroll-pane {
+    -fx-background-color: linear-gradient(to bottom, derive(-fx-text-box-border, -10%), -fx-text-box-border),
+        linear-gradient(from 0px 0px to 0px 5px, derive(-fx-control-inner-background, -9%), -fx-control-inner-background);
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 3, 2;
+}
+
+.virtualized-scroll-pane:focused {
+    -fx-background-color:
+        -fx-focus-color,
+        -fx-control-inner-background,
+        -fx-faint-focus-color,
+        linear-gradient(from 0px 0px to 0px 5px, derive(-fx-control-inner-background, -9%), -fx-control-inner-background);
+    -fx-background-insets: -0.2, 1, -1.4, 3;
+    -fx-background-radius: 3, 2, 4, 0;
+}
+
+/* 
+I don't understand why this rule fix problem with border around CodeArea.
+May be somebody can explain it.
+*/
+.virtualized-scroll-pane .styled-text-area {
+    -fx-background-insets: 0px;
+}
+
+.virtualized-scroll-pane .scroll-bar:horizontal {
+    -fx-background-radius: 0 0 2 2;
+
+    -fx-padding: 0 0.08333325em 0.08333325em 0.08333325em;
+    -fx-border-insets: 0 0.08333325em 0.08333325em 0.08333325em;
+    -fx-background-insets: 0 0.08333325em 0.08333325em 0.08333325em;
+}
+
+.virtualized-scroll-pane .scroll-bar:vertical {
+    -fx-background-radius: 0 2 2 0;
+
+    -fx-padding: 0.08333325em 0.08333325em 0.08333325em 0;
+    -fx-border-insets: 0.08333325em 0.08333325em 0.08333325em 0;
+    -fx-background-insets: 0.08333325em 0.08333325em 0.08333325em 0;
+}
