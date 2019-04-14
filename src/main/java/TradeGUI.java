@@ -133,7 +133,7 @@ public class TradeGUI extends Application {
         HBox hbox = new HBox();
         hbox.setPadding(new Insets(5, 0, 0, 0));
         hbox.setSpacing(5);
-        hbox.getChildren().addAll(getCurrencyBox(), getDumpAssetsButton());
+        hbox.getChildren().addAll(getCurrencyBox(), getSellAssetsButton());
         borderPane.setBottom(hbox);
 
         return borderPane;
@@ -233,7 +233,7 @@ public class TradeGUI extends Application {
         return comboBox;
     }
 
-    private Button getDumpAssetsButton() {
+    private Button getSellAssetsButton() {
         Button btn = new Button("Sell assets");
         btn.setTextFill(Color.WHITE);
         btn.setStyle("-fx-background-color: #dc3545;"/* -fx-background-radius: 4; fx-border-radius:4; fx-border-insets:4; -fx-border-color:black;"*/);
