@@ -1,5 +1,5 @@
 # TradeGUI
-A JavaFX GUI for clean & easy monitoring of trading balance, profits, assets and log messages. 
+A JavaFX GUI for clean & easy monitoring of trading balance, profits, assets, trades and log messages. 
 
 ![Alt text](TradeGUI.gif?raw=true "Preview")
 
